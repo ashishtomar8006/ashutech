@@ -170,15 +170,7 @@ export default function ContactSection() {
             <div className="">
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-purple-500 rounded-lg">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Email</p>
-                    <p className="text-white/70">contact@ashutech.vercel.app</p>
-                  </div>
-                </div>
+               
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-pink-500 rounded-lg">
                     <Phone className="w-6 h-6 text-white" />
@@ -189,13 +181,23 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
+                  <div className="p-3 bg-purple-500 rounded-lg">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Email</p>
+                    <p className="text-white/70">ashishtomar8006@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
                   <div className="p-3 bg-cyan-500 rounded-lg">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-white font-medium">Business Hours</p>
-                    <p className="text-white/70">Mon - Fri: 9AM - 6PM</p>
-                  </div>
+  <p className="text-white font-medium">Business Hours</p>
+  <p className="text-white/70">24/7 · Monday to Sunday</p>
+</div>
+
                 </div>
               </div>
             </div>

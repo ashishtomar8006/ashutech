@@ -6,7 +6,7 @@ import { useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star, Award, Users, Zap, Shield, Rocket, CheckCircle } from "lucide-react"
 
-export default function ServicesSection() {
+export default function ServicesSection({setIsQuoteModalOpen}: {setIsQuoteModalOpen: (value: boolean) => void}) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -261,7 +261,8 @@ export default function ServicesSection() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 hover:from-purple-600 hover:via-pink-600 hover:to-cyan-600 text-white px-12 py-4 text-xl font-semibold rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 border-0"
-              >
+                onClick={() => setIsQuoteModalOpen(true)}
+                >
                 Start Your Project Today
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>

@@ -30,8 +30,8 @@ export default function PricingSection() {
       packages: [
         {
           name: "Basic Website",
-          price: "$225",
-          originalPrice: "$450",
+          price: "$149",
+          originalPrice: "$298",
           popular: false,
           features: [
             "3 Page Website",
@@ -48,8 +48,8 @@ export default function PricingSection() {
         },
         {
           name: "Startup Website",
-          price: "$345",
-          originalPrice: "$690",
+          price: "$299",
+          originalPrice: "$598",
           popular: false,
           features: [
             "5 Stock Photos",
@@ -66,8 +66,8 @@ export default function PricingSection() {
         },
         {
           name: "Professional Website",
-          price: "$645",
-          originalPrice: "$1290",
+          price: "$549",
+          originalPrice: "$1098",
           popular: true,
           features: [
             "10 Unique Pages Website",
@@ -86,8 +86,8 @@ export default function PricingSection() {
         },
         {
           name: "Elite Website",
-          price: "$1245",
-          originalPrice: "$2490",
+          price: "$999",
+          originalPrice: "$1998",
           popular: false,
           features: [
             "Upto 15 Unique Pages Website",

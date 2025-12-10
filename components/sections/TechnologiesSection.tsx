@@ -5,7 +5,7 @@ import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Code2, Database, Cloud, Layers, Zap, Star, ArrowRight, Sparkles, Cpu, Globe } from "lucide-react"
 
-export default function TechnologiesSection() {
+export default function TechnologiesSection({setIsQuoteModalOpen}: {setIsQuoteModalOpen: (value: boolean) => void}) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -161,14 +161,14 @@ export default function TechnologiesSection() {
           className="max-w-7xl mx-auto"
         >
           {/* Header */}
-          <motion.div variants={itemVariants} className="text-center mb-20">
-            <motion.div
+          <motion.div variants={itemVariants} className="text-center my-20">
+            {/* <motion.div
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-full text-purple-300 font-medium mb-8 border border-purple-500/20 backdrop-blur-sm"
               whileHover={{ scale: 1.05 }}
             >
               <Sparkles className="w-5 h-5" />
               TECHNOLOGY ECOSYSTEM
-            </motion.div>
+            </motion.div> */}
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Our Tech{" "}
@@ -304,6 +304,7 @@ export default function TechnologiesSection() {
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 hover:from-purple-600 hover:via-pink-600 hover:to-cyan-600 text-white font-semibold text-lg rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => setIsQuoteModalOpen(true)}
               >
                 <Code2 className="w-6 h-6" />
                 Discuss Your Project

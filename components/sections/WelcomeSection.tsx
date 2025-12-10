@@ -5,7 +5,7 @@ import { useInView, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { Code, TrendingUp, ShoppingCart, ArrowRight, Sparkles, Target } from "lucide-react"
 
-export default function WelcomeSection() {
+export default function WelcomeSection({setIsQuoteModalOpen}: {setIsQuoteModalOpen: (value: boolean) => void}) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -274,6 +274,7 @@ export default function WelcomeSection() {
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 hover:from-purple-600 hover:via-pink-600 hover:to-cyan-600 text-white font-semibold text-lg rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => setIsQuoteModalOpen(true)}
               >
                 <Target className="w-6 h-6" />
                 Start Your Project

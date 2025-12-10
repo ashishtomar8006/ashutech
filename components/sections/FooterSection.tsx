@@ -80,7 +80,7 @@ export default function FooterSection() {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-purple-400" />
                   <div className="text-gray-300">
-                    <p>contact@aashutech.vercel.app</p>
+                    <p>ashishtomar8006@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function FooterSection() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
           >
-            <p>&copy; 2024 Ashu Tech. All rights reserved.</p>
+            <p>&copy; 2026 Ashu Tech. All rights reserved.</p>
           </motion.div>
         </motion.div>
       </div>

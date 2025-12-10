@@ -20,10 +20,12 @@ import ContactSection from "@/components/sections/ContactSection";
 import FooterSection from "@/components/sections/FooterSection";
 import Header from "@/components/sections/header";
 import PricingSection from "@/components/sections/pricing-section";
+import GetQuoteModal from "@/components/sections/get-quote-modal";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
-
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     setIsLoaded(true);
   }, []);
@@ -49,15 +51,15 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="min-h-screen bg-white"
     >
-      <Header/>
+      <Header />
       <HeroSection />
-      <ServicesSection />
+      {/* <ServicesSection setIsQuoteModalOpen={setIsQuoteModalOpen} /> */}
       {/* <BenefitsSection /> */}
-      <WelcomeSection />
-      <SlidingContentSection />
-      <TechnologiesSection />
-      <ProjectsSection />
-      <WhyAffordableSection />
+      <WelcomeSection  setIsQuoteModalOpen={setIsQuoteModalOpen}  />
+      {/* <SlidingContentSection /> */}
+      <TechnologiesSection setIsQuoteModalOpen={setIsQuoteModalOpen} />
+      {/* <ProjectsSection /> */}
+      <WhyAffordableSection setIsQuoteModalOpen={setIsQuoteModalOpen}/>
       <PricingSection />
       {/* <CustomExperiencesSection /> */}
       {/* <ProcessSection /> */}
@@ -66,6 +68,10 @@ export default function Home() {
       {/* <BlogSection /> */}
       <ContactSection />
       <FooterSection />
+      <GetQuoteModal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+      />
     </motion.div>
   );
 }
