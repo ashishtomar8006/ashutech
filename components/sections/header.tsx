@@ -51,21 +51,7 @@ export default function Header() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <motion.a
-              href="/"
-              className="flex items-center space-x-2"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 via-pink-500 to-cyan-500 rounded-xl flex items-center justify-center">
-                <Code className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                AshuTech
-              </span>
-            </motion.a>
-
+              <img src="/images/deloitte-name-logo.png" alt="" className="w-40 h-14" />
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navItems.map((item, index) => (

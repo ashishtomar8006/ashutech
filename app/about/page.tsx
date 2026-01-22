@@ -78,7 +78,7 @@ export default function AboutPage() {
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               About{" "}
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                Ashu Tech
+                DeloitteAI
               </span>
             </h1>
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-slate-900 mb-8">Our Story</h2>
             <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
               <p>
-                Founded in 2020, Ashu Tech was born from a simple idea: make world-class web development and digital
+                Founded in 2020, DeloitteAI was born from a simple idea: make world-class web development and digital
                 marketing services accessible to businesses of all sizes. We believed that quality shouldn't come with a
                 premium price tag.
               </p>

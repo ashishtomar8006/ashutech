@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
       company: "E-commerce Platform",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Ashu Tech transformed our online presence completely. Our e-commerce sales increased by 300% within 6 months. Their team's expertise in React and modern web technologies is outstanding."
+      text: "DeloitteAI transformed our online presence completely. Our e-commerce sales increased by 300% within 6 months. Their team's expertise in React and modern web technologies is outstanding."
     },
     {
       name: "Michael Chen",

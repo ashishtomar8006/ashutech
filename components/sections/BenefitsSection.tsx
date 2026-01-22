@@ -23,7 +23,7 @@ export default function BenefitsSection() {
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600/20 rounded-full text-purple-400 font-medium mb-8 border border-purple-600/30"
           >
-            WELCOME TO Ashu Tech 
+            WELCOME TO DeloitteAI 
           </motion.div>
 
           <motion.h2

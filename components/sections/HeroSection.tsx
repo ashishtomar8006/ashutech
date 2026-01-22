@@ -176,7 +176,7 @@ export default function HeroSection() {
                 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
               >
                 We Create{" "}
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-[#5ae2f3] bg-clip-text text-transparent">
                   Stunning
                 </span>
                 <br />
@@ -270,7 +270,7 @@ export default function HeroSection() {
           >
             {index === currentSlide && (
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-400 to-cyan-400"
+                className="absolute inset-0 bg-gradient-to-r from-purple-400 to-[#5ae2f3]"
                 layoutId="activeSlide"
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               />
@@ -293,7 +293,7 @@ export default function HeroSection() {
       >
         <div className="w-8 h-14 border-2 border-white/40 rounded-full flex justify-center backdrop-blur-sm bg-white/10">
           <motion.div
-            className="w-1.5 h-4 bg-gradient-to-b from-purple-400 to-cyan-400 rounded-full mt-3"
+            className="w-1.5 h-4 bg-gradient-to-b from-purple-400 to-[#5ae2f3] rounded-full mt-3"
             animate={{
               y: [0, 6, 0],
             }}

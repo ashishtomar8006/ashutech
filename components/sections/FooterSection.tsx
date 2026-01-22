@@ -93,7 +93,7 @@ export default function FooterSection() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
           >
-            <p>&copy; 2026 Ashu Tech. All rights reserved.</p>
+            <p>&copy; 2026 DeloitteAI. All rights reserved.</p>
           </motion.div>
         </motion.div>
       </div>
